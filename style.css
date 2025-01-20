@@ -1,0 +1,461 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Proxima Nova", -apple-system, Roboto, Arial, sans-serif, sans-serif;
+}
+
+/* TODO RESPECTO AL HEADER */
+
+header {
+    background-color: rgb(247, 208, 211);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenedorLogo {
+    padding-top: 5px;
+}
+
+.contenedorLogo a {
+    text-decoration: none;
+    color: rgb(65, 61, 61);
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+.contenedorNavegacion a {
+    text-decoration: none;
+    color: rgb(65, 61, 61);
+    display: inline-block;
+    font-size: small;
+}
+
+.contenedorNavegacion ul {
+    list-style: none;
+}
+
+#contenedorBuscador input {
+    width: 100px;
+    padding: 5px 5px;
+    font-size: 12px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+.carrito {
+    padding-top: 10px;
+}
+
+.carrito a {
+    color: rgb(65, 61, 61);
+}
+
+
+/* TODO RESPECTO main */
+main {
+    background-color: #ffffff;
+}
+
+h1 {
+    color: rgb(8, 5, 1);
+}
+
+.boxDeTodosLosProductos {
+    display: grid;
+    grid-template-columns: repeat(1, 250px);
+    justify-content: center;
+}
+
+.cajaPublicacion {
+    background-color: rgb(247, 208, 211);
+    width: 250px;
+    border: solid 1px black;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cajaPublicacion:hover {
+    transform: translateY(-3px);
+}
+
+.imgProductos {
+    width: 190px;
+    padding-top: 10px;
+}
+
+.precio {
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
+
+.comprar {
+    width: 40%;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    font-size: medium;
+}
+
+.cajaPublicacion button:hover {
+    background-color: rgb(247, 208, 211);
+    font-size: medium;
+    border: 4px ridge rgb(255, 255, 255);
+}
+
+/* TODO RESPECTO AL FOOTER */
+
+
+footer {
+    background-color: rgb(247, 208, 211);
+}
+
+.logoFooter {
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+}
+
+.linksFooter {
+    display: flex;
+    flex-direction: column;
+}
+
+.lk {
+    padding-top: 10px;
+}
+
+.linksFooter a {
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+}
+
+footer div a:hover {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:580px) {
+
+    header {
+        background-color: rgb(247, 208, 211);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contenedorLogo {
+        margin-left: 5px;
+        height: 60px;
+    }
+
+    .contenedorLogo a {
+        text-decoration: none;
+        color: rgb(65, 61, 61);
+        font-size: 30px;
+    }
+
+    .contenedorNavegacion {
+        margin-top: 20px;
+    }
+
+    .contenedorNavegacion a {
+        text-decoration: none;
+        color: rgb(65, 61, 61);
+        font-size: 15px;
+    }
+
+    .contenedorNavegacion ul {
+        list-style: none;
+    }
+
+    .contenedorNavegacion ul li {
+        padding: 3px;
+        border: 2px solid #8a8989;
+        display: inline-block;
+    }
+
+    #contenedorBuscador {
+        margin-top: 10px;
+    }
+
+    #contenedorBuscador input {
+        width: 150px;
+        /* Ancho del input */
+        padding: 10px 10px;
+        /* Espaciado interno */
+        font-size: 10px;
+        /* Tamaño de la fuente */
+        border: 2px solid #ccc;
+        /* Borde del input */
+        border-radius: 25px;
+        /* Bordes redondeados */
+        outline: none;
+    }
+
+    .carrito {
+        margin-right: 10px;
+    }
+
+    .carrito a {
+        color: rgb(65, 61, 61);
+        font-size: 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* DISTRIBUCION DE LAS PUBLICACIONES */
+
+    .boxDeTodosLosProductos {
+        display: grid;
+        grid-template-columns: repeat(2, 250px);
+        gap: 20px;
+        justify-content: space-evenly;
+    }
+
+    /* CONFIGURACION DE FOOTER */
+
+    .linksFooter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width:820px) {
+    header {
+        background-color: rgb(247, 208, 211);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+
+    .contenedorLogo {
+        margin-left: 5px;
+        height: 60px;
+    }
+
+    .contenedorLogo a {
+        text-decoration: none;
+        color: rgb(65, 61, 61);
+        font-size: 40px;
+    }
+
+    .contenedorNavegacion {
+        margin-top: 10px;
+    }
+
+    .contenedorNavegacion a {
+        text-decoration: none;
+        color: rgb(65, 61, 61);
+        font-size: 25px;
+    }
+
+    .contenedorNavegacion ul {
+        list-style: none;
+    }
+
+    .contenedorNavegacion ul li {
+        padding: 3px;
+        border: 2px solid #8a8989;
+        display: inline-block;
+    }
+
+    #contenedorBuscador {
+        padding-bottom: 2px;
+    }
+
+    #contenedorBuscador input {
+        width: 200px;
+        /* Ancho del input */
+        padding: 10px 10px;
+        /* Espaciado interno */
+        font-size: 15px;
+        /* Tamaño de la fuente */
+        border: 2px solid #ccc;
+        /* Borde del input */
+        border-radius: 25px;
+        /* Bordes redondeados */
+        outline: none;
+    }
+
+    .carrito {
+        margin-right: 20px;
+    }
+
+    .carrito a {
+        color: rgb(65, 61, 61);
+        font-size: 25px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* DISTRUBUCION DE PUBLICACIONES */
+
+    .boxDeTodosLosProductos {
+        display: grid;
+        grid-template-columns: repeat(3, 250px);
+        gap: 20px;
+        justify-content: space-evenly;
+    }
+
+    /* CONFIGURACION FOOTER */
+
+    .linksFooter {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width:1060px) {
+    header {
+        background-color: rgb(247, 208, 211);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+
+    .contenedorLogo {
+        margin-left: 5px;
+        height: 60px;
+    }
+
+    .contenedorLogo a {
+        text-decoration: none;
+        color: rgb(65, 61, 61);
+        font-size: 40px;
+    }
+
+    .contenedorNavegacion {
+        margin-top: 10px;
+    }
+
+    .contenedorNavegacion a {
+        text-decoration: none;
+        color: rgb(65, 61, 61);
+        font-size: 25px;
+    }
+
+    .contenedorNavegacion ul {
+        list-style: none;
+    }
+
+    .contenedorNavegacion ul li {
+        padding: 3px;
+        border: 2px solid #8a8989;
+        display: inline-block;
+    }
+
+    #contenedorBuscador {
+        padding-bottom: 2px;
+    }
+
+    #contenedorBuscador input {
+        width: 290px;
+        /* Ancho del input */
+        padding: 10px 10px;
+        /* Espaciado interno */
+        font-size: 15px;
+        /* Tamaño de la fuente */
+        border: 2px solid #ccc;
+        /* Borde del input */
+        border-radius: 25px;
+        /* Bordes redondeados */
+        outline: none;
+    }
+
+    .carrito {
+        margin-right: 20px;
+    }
+
+    .carrito a {
+        color: rgb(65, 61, 61);
+        font-size: 30px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* DISTRIBUCION DE LAS PUBLICACIONES */
+    .boxDeTodosLosProductos {
+        display: grid;
+        grid-template-columns: repeat(4, 250px);
+        gap: 20px;
+        justify-content: space-evenly;
+    }
+
+    /* MODIFICACION FOOTER */
+
+    .linksFooter {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 10px;
+    }
+
+}
