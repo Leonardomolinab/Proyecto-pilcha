@@ -7,33 +7,35 @@
 
 /* TODO RESPECTO AL HEADER */
 
-header {
+/* inicio cambio de fuente, borde links nav bt*/
+.pages {
+    margin: 1px;
+    font-size: 15px;
+    color: black;
+    margin-top: 15px;
+    border: 1px solid black;
+}
+
+/* fin cambio de fuente, borde links nav bt */
+
+/* inicio cambio de fuente link logo bt */
+.logo {
+    font-size: 30px;
+    color: black;
+}
+
+/* fin cambio de fuente link logo bt */
+
+/* inicio cambio de bg-color header */
+.barraNavegacion {
     background-color: rgb(247, 208, 211);
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+    font-family: "Proxima Nova", -apple-system, Roboto, Arial, sans-serif, sans-serif;
 }
 
-.contenedorLogo {
-    padding-top: 5px;
-}
+/* fin cambio de bg-color header */
 
-.contenedorLogo a {
-    text-decoration: none;
-    color: rgb(65, 61, 61);
-    font-size: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.contenedorNavegacion a {
-    text-decoration: none;
-    color: rgb(65, 61, 61);
-    display: inline-block;
-    font-size: small;
-}
-
-.contenedorNavegacion ul {
-    list-style: none;
+#contenedorBuscador {
+    padding-top: 10px;
 }
 
 #contenedorBuscador input {
@@ -45,16 +47,13 @@ header {
     outline: none;
 }
 
-nav ul li a:hover {
-    color: white;
-}
-
 .carrito {
-    padding-top: 10px;
+    padding: 10px;
 }
 
 .carrito a {
     color: rgb(65, 61, 61);
+    font-size: 20px;
 }
 
 
@@ -88,10 +87,12 @@ h1 {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
+    transition: transform 1s ease 0.5s;
 }
 
 .cajaPublicacion:hover {
-    transform: translateY(-3px);
+    transform: translateY(-2px);
+    background-image: radial-gradient(circle, white, rgb(247, 208, 211));
 }
 
 .imgProductos {
@@ -113,10 +114,14 @@ h1 {
     font-size: medium;
 }
 
+.cajaPublicacion button {
+    transition: border 1s ease;
+}
+
 .cajaPublicacion button:hover {
     background-color: rgb(247, 208, 211);
     font-size: medium;
-    border: 4px ridge rgb(255, 255, 255);
+    border: 3px ridge rgb(255, 255, 255);
 }
 
 /* TODO RESPECTO AL FOOTER */
@@ -162,188 +167,216 @@ footer div a:hover {
 
 
 
+@media (min-width: 576px) and (max-width: 600px) {
 
-
-@media only screen and (min-width:580px) {
-
-    header {
-        background-color: rgb(247, 208, 211);
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
+    .pages {
+        font-size: 10px;
     }
 
-    .contenedorLogo {
-        margin-left: 5px;
-        height: 60px;
-    }
-
-    .contenedorLogo a {
-        text-decoration: none;
-        color: rgb(65, 61, 61);
+    .logo {
         font-size: 30px;
-    }
-
-    .contenedorNavegacion {
-        margin-top: 20px;
-    }
-
-    .contenedorNavegacion a {
-        text-decoration: none;
-        color: rgb(65, 61, 61);
-        font-size: 15px;
-    }
-
-    .contenedorNavegacion ul {
-        list-style: none;
-    }
-
-    .contenedorNavegacion ul li {
-        padding: 3px;
-        border: 2px solid #8a8989;
-        display: inline-block;
     }
 
     #contenedorBuscador {
         margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .carrito {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 650px) {
+    .pages {
+        font-size: 10px;
+    }
+
+    .logo {
+        font-size: 35px;
+    }
+
+    #contenedorBuscador {
+        margin-top: 10px;
+        margin-left: 12px;
+    }
+
+    .carrito {
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 670px) {
+    .pages {
+        font-size: 12px;
+    }
+
+    .logo {
+        font-size: 35px;
+    }
+
+    #contenedorBuscador {
+        margin-top: 10px;
+        margin-left: 16px;
+    }
+
+    .carrito {
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+
+    .carrito a {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 670px) and (max-width: 720px) {
+    .pages {
+        font-size: 12px;
+    }
+
+    .logo {
+        font-size: 35px;
+    }
+
+    #contenedorBuscador {
+        margin-top: 10px;
+        margin-left: 16px;
     }
 
     #contenedorBuscador input {
-        width: 150px;
-        /* Ancho del input */
-        padding: 10px 10px;
-        /* Espaciado interno */
-        font-size: 10px;
-        /* Tamaño de la fuente */
+        width: 122px;
+        padding: 5px 5px;
+        font-size: 12px;
         border: 2px solid #ccc;
-        /* Borde del input */
         border-radius: 25px;
-        /* Bordes redondeados */
         outline: none;
     }
 
     .carrito {
-        margin-right: 10px;
+        margin-top: 15px;
+        margin-left: 10px;
     }
 
     .carrito a {
-        color: rgb(65, 61, 61);
-        font-size: 20px;
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 721px) and (max-width: 750px) {
+    .pages {
+        font-size: 12px;
     }
 
+    .logo {
+        font-size: 35px;
+    }
 
+    #contenedorBuscador {
+        margin-top: 10px;
+        margin-left: 16px;
+    }
 
+    #contenedorBuscador input {
+        width: 150px;
+        padding: 5px 5px;
+        font-size: 12px;
+        border: 2px solid #ccc;
+        border-radius: 25px;
+        outline: none;
+    }
 
+    .carrito {
+        margin-top: 15px;
+        margin-left: 10px;
+    }
 
+    .carrito a {
+        font-size: 30px;
+    }
+}
 
+@media (min-width: 750px) and (max-width: 780px) {
+    .pages {
+        font-size: 12px;
+    }
 
+    .logo {
+        font-size: 35px;
+    }
 
+    #contenedorBuscador {
+        margin-top: 10px;
+        margin-left: 16px;
+    }
 
+    #contenedorBuscador input {
+        width: 190px;
+        padding: 5px 5px;
+        font-size: 12px;
+        border: 2px solid #ccc;
+        border-radius: 25px;
+        outline: none;
+    }
 
+    .carrito {
+        margin-top: 15px;
+        margin-left: 10px;
+    }
 
+    .carrito a {
+        font-size: 30px;
+    }
+}
 
+@media (min-width: 780px) and (max-width: 820px) {
+    .pages {
+        font-size: 14px;
+    }
+
+    .logo {
+        font-size: 37px;
+    }
+
+    #contenedorBuscador {
+        margin-top: 10px;
+        margin-left: 16px;
+    }
+
+    #contenedorBuscador input {
+        width: 180px;
+        padding: 5px 5px;
+        font-size: 12px;
+        border: 2px solid #ccc;
+        border-radius: 25px;
+        outline: none;
+    }
+
+    .carrito {
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+
+    .carrito a {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 720px) and (max-width: 820px) {
 
     /* DISTRIBUCION DE LAS PUBLICACIONES */
-
     .boxDeTodosLosProductos {
         display: grid;
         grid-template-columns: repeat(2, 250px);
         gap: 20px;
         justify-content: space-evenly;
     }
-
-    /* CONFIGURACION DE FOOTER */
-
-    .linksFooter {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        padding-bottom: 10px;
-    }
 }
 
 @media only screen and (min-width:820px) {
-    header {
-        background-color: rgb(247, 208, 211);
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        padding-top: 10px;
-    }
-
-    .contenedorLogo {
-        margin-left: 5px;
-        height: 60px;
-    }
-
-    .contenedorLogo a {
-        text-decoration: none;
-        color: rgb(65, 61, 61);
-        font-size: 40px;
-    }
-
-    .contenedorNavegacion {
-        margin-top: 10px;
-    }
-
-    .contenedorNavegacion a {
-        text-decoration: none;
-        color: rgb(65, 61, 61);
-        font-size: 25px;
-    }
-
-    .contenedorNavegacion ul {
-        list-style: none;
-    }
-
-    .contenedorNavegacion ul li {
-        padding: 3px;
-        border: 2px solid #8a8989;
-        display: inline-block;
-    }
-
-    #contenedorBuscador {
-        padding-bottom: 2px;
-    }
-
-    #contenedorBuscador input {
-        width: 200px;
-        /* Ancho del input */
-        padding: 10px 10px;
-        /* Espaciado interno */
-        font-size: 15px;
-        /* Tamaño de la fuente */
-        border: 2px solid #ccc;
-        /* Borde del input */
-        border-radius: 25px;
-        /* Bordes redondeados */
-        outline: none;
-    }
-
-    .carrito {
-        margin-right: 20px;
-    }
-
-    .carrito a {
-        color: rgb(65, 61, 61);
-        font-size: 25px;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     /* DISTRUBUCION DE PUBLICACIONES */
@@ -364,90 +397,501 @@ footer div a:hover {
     }
 }
 
-@media only screen and (min-width:1060px) {
-    header {
-        background-color: rgb(247, 208, 211);
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        padding-top: 10px;
+@media (min-width: 821px) and (max-width: 870px) {
+
+    .pages {
+        font-size: 14px;
     }
 
-    .contenedorLogo {
-        margin-left: 5px;
-        height: 60px;
-    }
-
-    .contenedorLogo a {
-        text-decoration: none;
-        color: rgb(65, 61, 61);
-        font-size: 40px;
-    }
-
-    .contenedorNavegacion {
-        margin-top: 10px;
-    }
-
-    .contenedorNavegacion a {
-        text-decoration: none;
-        color: rgb(65, 61, 61);
-        font-size: 25px;
-    }
-
-    .contenedorNavegacion ul {
-        list-style: none;
-    }
-
-    .contenedorNavegacion ul li {
-        padding: 3px;
-        border: 2px solid #8a8989;
-        display: inline-block;
+    .logo {
+        font-size: 38px;
     }
 
     #contenedorBuscador {
-        padding-bottom: 2px;
+        margin-top: 5px;
+        margin-left: 30px;
     }
 
     #contenedorBuscador input {
-        width: 290px;
-        /* Ancho del input */
+        width: 180px;
         padding: 10px 10px;
-        /* Espaciado interno */
-        font-size: 15px;
-        /* Tamaño de la fuente */
+        font-size: 12px;
         border: 2px solid #ccc;
-        /* Borde del input */
         border-radius: 25px;
-        /* Bordes redondeados */
         outline: none;
     }
 
     .carrito {
-        margin-right: 20px;
+        margin-top: 10px;
+        margin-left: 30px;
     }
 
     .carrito a {
-        color: rgb(65, 61, 61);
         font-size: 30px;
     }
 
+    /* DISTRIBUCION DE LAS PUBLICACIONES */
+
+    .boxDeTodosLosProductos {
+        display: grid;
+        grid-template-columns: repeat(2, 250px);
+        gap: 20px;
+        justify-content: space-evenly;
+    }
+
+}
+
+@media (min-width: 871px) and (max-width: 920px) {
+    .padding-nav {
+        margin-left: 45px;
+    }
+
+    .pages {
+        font-size: 14px;
+    }
+
+    .logo {
+        font-size: 38px;
+    }
+
+    #contenedorBuscador {
+        margin-top: 5px;
+        margin-left: 30px;
+    }
+
+    #contenedorBuscador input {
+        width: 180px;
+        padding: 10px 10px;
+        font-size: 12px;
+        border: 2px solid #ccc;
+        border-radius: 25px;
+        outline: none;
+    }
+
+    .carrito {
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+
+    .carrito a {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 921px) and (max-width: 960px) {
+    .padding-logo {
+        margin-left: 30px;
+    }
+
+    .padding-nav {
+        margin-left: 45px;
+    }
+
+    .pages {
+        font-size: 14px;
+    }
+
+    .logo {
+        font-size: 38px;
+    }
+
+    #contenedorBuscador {
+        margin-top: 5px;
+        margin-left: 30px;
+    }
+
+    #contenedorBuscador input {
+        width: 180px;
+        padding: 10px 10px;
+        font-size: 12px;
+        border: 2px solid #ccc;
+        border-radius: 25px;
+        outline: none;
+    }
+
+    .carrito {
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+
+    .carrito a {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 961px) and (max-width: 1000px) {
+    .padding-logo {
+        margin-left: 40px;
+    }
+
+    .padding-nav {
+        margin-left: 45px;
+    }
+
+    .pages {
+        font-size: 15px;
+    }
+
+    .logo {
+        font-size: 40px;
+    }
+
+    #contenedorBuscador {
+        margin-top: 5px;
+        margin-left: 40px;
+    }
+
+    #contenedorBuscador input {
+        width: 180px;
+        padding: 10px 10px;
+        font-size: 12px;
+        border: 2px solid #ccc;
+        border-radius: 25px;
+        outline: none;
+    }
+
+    .carrito {
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+
+    .carrito a {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1040px) {
+
+    .padding-nav {
+        margin-left: 45px;
+    }
+
+    .pages {
+        font-size: 18px;
+    }
+
+    .logo {
+        font-size: 45px;
+    }
+
+    #contenedorBuscador {
+        margin-top: 5px;
+        margin-left: 40px;
+    }
+
+    #contenedorBuscador input {
+        width: 200px;
+        padding: 10px 10px;
+        font-size: 12px;
+        border: 2px solid #ccc;
+        border-radius: 25px;
+        outline: none;
+    }
+
+    .carrito {
+        margin-top: 10px;
+        margin-left: 35px;
+    }
+
+    .carrito a {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1040px) and (max-width: 1080px) {
+
+    .padding-nav {
+        margin-left: 45px;
+    }
+
+    .pages {
+        font-size: 18px;
+    }
+
+    .logo {
+        font-size: 45px;
+    }
+
+    #contenedorBuscador {
+        margin-top: 5px;
+        margin-left: 50px;
+    }
+
+    #contenedorBuscador input {
+        width: 210px;
+        padding: 10px 10px;
+        font-size: 12px;
+        border: 2px solid #ccc;
+        border-radius: 25px;
+        outline: none;
+    }
+
+    .carrito {
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+
+    .carrito a {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1081px) and (max-width: 1100px) {
+
+    .padding-nav {
+        margin-left: 50px;
+    }
+
+    .pages {
+        font-size: 18px;
+    }
+
+    .logo {
+        font-size: 45px;
+    }
+
+    #contenedorBuscador {
+        margin-top: 5px;
+        margin-left: 55px;
+    }
+
+    #contenedorBuscador input {
+        width: 210px;
+        padding: 10px 10px;
+        font-size: 12px;
+        border: 2px solid #ccc;
+        border-radius: 25px;
+        outline: none;
+    }
+
+    .carrito {
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+
+    .carrito a {
+        font-size: 30px;
+    }
+
+}
+
+@media (min-width: 1101px) and (max-width: 1140px) {
+    .padding-logo {
+        margin-left: 20px;
+    }
+
+    .padding-nav {
+        margin-left: 50px;
+    }
+
+    .pages {
+        font-size: 18px;
+    }
+
+    .logo {
+        font-size: 45px;
+    }
+
+    #contenedorBuscador {
+        margin-top: 5px;
+        margin-left: 55px;
+    }
+
+    #contenedorBuscador input {
+        width: 210px;
+        padding: 10px 10px;
+        font-size: 12px;
+        border: 2px solid #ccc;
+        border-radius: 25px;
+        outline: none;
+    }
+
+    .carrito {
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+
+    .carrito a {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1141px) and (max-width: 1190px) {
+    .padding-logo {
+        margin-left: 40px;
+    }
+
+    .padding-nav {
+        margin-left: 50px;
+    }
+
+    .pages {
+        font-size: 18px;
+    }
+
+    .logo {
+        font-size: 45px;
+    }
+
+    #contenedorBuscador {
+        margin-top: 5px;
+        margin-left: 55px;
+    }
+
+    #contenedorBuscador input {
+        width: 210px;
+        padding: 10px 10px;
+        font-size: 12px;
+        border: 2px solid #ccc;
+        border-radius: 25px;
+        outline: none;
+    }
+
+    .carrito {
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+
+    .carrito a {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1191px) and (max-width: 1210px) {
+
+    .padding-nav {
+        margin-left: 50px;
+    }
+
+    .pages {
+        font-size: 20px;
+    }
+
+    .logo {
+        font-size: 45px;
+    }
+
+    #contenedorBuscador {
+        margin-top: 5px;
+        margin-left: 60px;
+    }
+
+    #contenedorBuscador input {
+        width: 250px;
+        padding: 10px 10px;
+        font-size: 12px;
+        border: 2px solid #ccc;
+        border-radius: 25px;
+        outline: none;
+    }
+
+    .carrito {
+        margin-top: 10px;
+        margin-left: 60px;
+    }
+
+    .carrito a {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1211px) and (max-width: 1240px) {
+    .padding-logo {
+        margin-left: 23px;
+    }
+
+    .padding-nav {
+        margin-left: 65px;
+    }
+
+    .pages {
+        font-size: 20px;
+    }
+
+    .logo {
+        font-size: 45px;
+    }
+
+    #contenedorBuscador {
+        margin-top: 5px;
+        margin-left: 60px;
+    }
+
+    #contenedorBuscador input {
+        width: 250px;
+        padding: 10px 10px;
+        font-size: 12px;
+        border: 2px solid #ccc;
+        border-radius: 25px;
+        outline: none;
+    }
+
+    .carrito {
+        margin-top: 10px;
+        margin-left: 60px;
+    }
+
+    .carrito a {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1241px) and (max-width: 1440px) {
+    .padding-logo {
+        margin-left: 23px;
+    }
+
+    .padding-nav {
+        margin-left: 65px;
+    }
+
+    .pages {
+        font-size: 20px;
+    }
+
+    .logo {
+        font-size: 45px;
+    }
+
+    #contenedorBuscador {
+        margin-top: 5px;
+        margin-left: 60px;
+    }
+
+    #contenedorBuscador input {
+        width: 250px;
+        padding: 10px 10px;
+        font-size: 12px;
+        border: 2px solid #ccc;
+        border-radius: 25px;
+        outline: none;
+    }
+
+    .carrito {
+        margin-top: 10px;
+        margin-left: 60px;
+    }
+
+    .carrito a {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width:721px) {
+
+    /* CONFIGURACION DE FOOTER */
+
+    .linksFooter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-bottom: 10px;
+    }
+
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (min-width:1060px) {
 
     /* DISTRIBUCION DE LAS PUBLICACIONES */
     .boxDeTodosLosProductos {
@@ -456,13 +900,4 @@ footer div a:hover {
         gap: 20px;
         justify-content: space-evenly;
     }
-
-    /* MODIFICACION FOOTER */
-
-    .linksFooter {
-        display: flex;
-        justify-content: space-evenly;
-        padding-bottom: 10px;
-    }
-
 }
