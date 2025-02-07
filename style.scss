@@ -4,8 +4,10 @@
     box-sizing: border-box;
     font-family: "Proxima Nova", -apple-system, Roboto, Arial, sans-serif, sans-serif;
 }
+$rosaGeneral:rgb(247, 208, 211);
 
 /* TODO RESPECTO AL HEADER */
+
 /* inicio cambio de fuente, borde links nav bt*/
 .pages {
     margin: 1px;
@@ -16,6 +18,7 @@
 }
 
 /* fin cambio de fuente, borde links nav bt */
+
 /* inicio cambio de fuente link logo bt */
 .logo {
     font-size: 30px;
@@ -23,13 +26,15 @@
 }
 
 /* fin cambio de fuente link logo bt */
+
 /* inicio cambio de bg-color header */
 .barraNavegacion {
-    background-color: rgb(247, 208, 211);
+    background-color: $rosaGeneral;
     font-family: "Proxima Nova", -apple-system, Roboto, Arial, sans-serif, sans-serif;
 }
 
 /* fin cambio de bg-color header */
+
 #contenedorBuscador {
     padding-top: 10px;
 }
@@ -51,6 +56,7 @@
     color: rgb(65, 61, 61);
     font-size: 20px;
 }
+
 
 /* TODO RESPECTO main */
 main {
@@ -75,7 +81,7 @@ h1 {
 }
 
 .cajaPublicacion {
-    background-color: rgb(247, 208, 211);
+    background-color:$rosaGeneral;
     width: 250px;
     border: solid 1px black;
     border-radius: 10px;
@@ -114,14 +120,16 @@ h1 {
 }
 
 .cajaPublicacion button:hover {
-    background-color: rgb(247, 208, 211);
+    background-color: $rosaGeneral;
     font-size: medium;
     border: 3px ridge rgb(255, 255, 255);
 }
 
 /* TODO RESPECTO AL FOOTER */
+
+
 footer {
-    background-color: rgb(247, 208, 211);
+    background-color: $rosaGeneral;
 }
 
 .logoFooter {
@@ -148,7 +156,20 @@ footer div a:hover {
     color: white;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 576px) and (max-width: 600px) {
+
     .pages {
         font-size: 10px;
     }
@@ -166,6 +187,7 @@ footer div a:hover {
         margin-top: 10px;
         margin-left: 10px;
     }
+
 }
 
 @media (min-width: 600px) and (max-width: 650px) {
@@ -344,15 +366,17 @@ footer div a:hover {
     }
 }
 
-@media only screen and (min-width: 721px) {
+@media only screen and (min-width:721px) {
 
     /* CONFIGURACION DE FOOTER */
+
     .linksFooter {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         padding-bottom: 10px;
     }
+
 }
 
 @media (min-width: 720px) and (max-width: 820px) {
@@ -366,9 +390,11 @@ footer div a:hover {
     }
 }
 
-@media only screen and (min-width: 820px) {
+@media only screen and (min-width:820px) {
+
 
     /* DISTRUBUCION DE PUBLICACIONES */
+
     .boxDeTodosLosProductos {
         display: grid;
         grid-template-columns: repeat(3, 250px);
@@ -377,6 +403,7 @@ footer div a:hover {
     }
 
     /* CONFIGURACION FOOTER */
+
     .linksFooter {
         display: flex;
         justify-content: space-evenly;
@@ -385,6 +412,7 @@ footer div a:hover {
 }
 
 @media (min-width: 821px) and (max-width: 870px) {
+
     .pages {
         font-size: 14px;
     }
@@ -417,12 +445,14 @@ footer div a:hover {
     }
 
     /* DISTRIBUCION DE LAS PUBLICACIONES */
+
     .boxDeTodosLosProductos {
         display: grid;
         grid-template-columns: repeat(2, 250px);
         gap: 20px;
         justify-content: space-evenly;
     }
+
 }
 
 @media (min-width: 871px) and (max-width: 920px) {
@@ -545,6 +575,7 @@ footer div a:hover {
 }
 
 @media (min-width: 1001px) and (max-width: 1040px) {
+
     .padding-nav {
         margin-left: 45px;
     }
@@ -581,7 +612,7 @@ footer div a:hover {
     }
 }
 
-@media (min-width: 1060px) {
+@media (min-width:1060px) {
 
     /* DISTRIBUCION DE LAS PUBLICACIONES */
     .boxDeTodosLosProductos {
@@ -593,6 +624,7 @@ footer div a:hover {
 }
 
 @media (min-width: 1040px) and (max-width: 1080px) {
+
     .padding-nav {
         margin-left: 45px;
     }
@@ -630,6 +662,7 @@ footer div a:hover {
 }
 
 @media (min-width: 1081px) and (max-width: 1100px) {
+
     .padding-nav {
         margin-left: 50px;
     }
@@ -664,6 +697,7 @@ footer div a:hover {
     .carrito a {
         font-size: 30px;
     }
+
 }
 
 @media (min-width: 1101px) and (max-width: 1140px) {
@@ -749,6 +783,7 @@ footer div a:hover {
 }
 
 @media (min-width: 1191px) and (max-width: 1210px) {
+
     .padding-nav {
         margin-left: 50px;
     }
@@ -866,5 +901,3 @@ footer div a:hover {
         font-size: 30px;
     }
 }
-
-/*# sourceMappingURL=style.css.map */
