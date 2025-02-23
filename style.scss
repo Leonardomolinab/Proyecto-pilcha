@@ -8,9 +8,9 @@
 $rosaGeneral: rgb(247, 208, 211);
 
 /* TODO RESPECTO AL HEADER */
-
 .barraNavegacion {
   background-color: $rosaGeneral;
+  border-bottom: #000000 solid;
 } /*cambio de bg-color header */
 
 .pages {
@@ -45,10 +45,15 @@ $rosaGeneral: rgb(247, 208, 211);
     color: #646878;
   }
 }
-
+/*Configuracion para dejar footer en la parte inferior*/
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
 /* TODO RESPECTO main */
 main {
-  background-color: #ffffff;
+  background-image: linear-gradient($rosaGeneral, rgba(224, 224, 131, 0.5));
   h1 {
     color: rgb(8, 5, 1);
     display: flex;
@@ -101,32 +106,50 @@ main {
   }
 }
 
+.mapas {
+  width: 60%;
+  height: 300px;
+  display: flex;
+  justify-self: center;
+}
+.pago{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .imgPagos{
+    width: 10%;
+    height: 10%;
+    margin: 1%;
+  }
+  .banco{
+    width: 100%;
+  }
+}
 /* TODO RESPECTO AL FOOTER */
 
 footer {
-  background-color: $rosaGeneral;
+  border-top: #000000 solid;
+  background-image: linear-gradient(rgba(224, 224, 131, 0.5), $rosaGeneral);
   .logoFooter {
     font-size: 25px;
     color: rgb(0, 0, 0);
   }
 }
 .linksFooter {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  a:hover {
+    color: white;
+  }
 }
 
 .lk {
   padding-top: 10px;
-}
-
-.linksFooter a {
-  font-size: 17px;
-  color: black;
-  text-decoration: none;
-}
-
-footer div a:hover {
-  color: white;
 }
 
 /* Incio mediaqueries */

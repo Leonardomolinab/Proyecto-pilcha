@@ -8,6 +8,7 @@
 /* TODO RESPECTO AL HEADER */
 .barraNavegacion {
   background-color: rgb(247, 208, 211);
+  border-bottom: #000000 solid;
 } /*cambio de bg-color header */
 .pages {
   margin: 1px;
@@ -40,9 +41,16 @@
   color: #646878;
 }
 
+/*Configuracion para dejar footer en la parte inferior*/
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
 /* TODO RESPECTO main */
 main {
-  background-color: #ffffff;
+  background-image: linear-gradient(rgb(247, 208, 211), rgba(224, 224, 131, 0.5));
 }
 main h1 {
   color: rgb(8, 5, 1);
@@ -93,9 +101,31 @@ main h1 {
   font-size: medium;
 }
 
+.mapas {
+  width: 60%;
+  height: 300px;
+  display: flex;
+  justify-self: center;
+}
+
+.pago {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pago .imgPagos {
+  width: 10%;
+  height: 10%;
+  margin: 1%;
+}
+.pago .banco {
+  width: 100%;
+}
+
 /* TODO RESPECTO AL FOOTER */
 footer {
-  background-color: rgb(247, 208, 211);
+  border-top: #000000 solid;
+  background-image: linear-gradient(rgba(224, 224, 131, 0.5), rgb(247, 208, 211));
 }
 footer .logoFooter {
   font-size: 25px;
@@ -103,22 +133,20 @@ footer .logoFooter {
 }
 
 .linksFooter {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+.linksFooter a {
+  color: black;
+  text-decoration: none;
+}
+.linksFooter a:hover {
+  color: white;
 }
 
 .lk {
   padding-top: 10px;
-}
-
-.linksFooter a {
-  font-size: 17px;
-  color: black;
-  text-decoration: none;
-}
-
-footer div a:hover {
-  color: white;
 }
 
 /* Incio mediaqueries */
