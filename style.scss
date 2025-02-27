@@ -10,7 +10,7 @@ $rosaGeneral: rgb(247, 208, 211);
 /* TODO RESPECTO AL HEADER */
 .barraNavegacion {
   background-color: $rosaGeneral;
-  border-bottom: #000000 solid;
+  // border-bottom: #000000 solid;
 } /*cambio de bg-color header */
 
 .pages {
@@ -53,11 +53,16 @@ body {
 }
 /* TODO RESPECTO main */
 main {
-  background-image: linear-gradient($rosaGeneral, rgba(224, 224, 131, 0.5));
+  // background-image: linear-gradient($rosaGeneral, rgba(224, 224, 131, 0.5));
   h1 {
+    margin-top: 20px;
     color: rgb(8, 5, 1);
     display: flex;
     justify-content: center;
+  }
+  .bannerC{
+    width: 80%;
+    justify-self: center;
   }
 }
 .boxDeTodosLosProductos {
@@ -88,7 +93,7 @@ main {
   }
   .imgProductos {
     width: 190px;
-    padding-top: 10px;
+    margin-top: 10px;
   }
 
   .precio {
@@ -128,8 +133,9 @@ main {
 /* TODO RESPECTO AL FOOTER */
 
 footer {
-  border-top: #000000 solid;
-  background-image: linear-gradient(rgba(224, 224, 131, 0.5), $rosaGeneral);
+  // border-top: #000000 solid;
+
+  background-color: $rosaGeneral;
   .logoFooter {
     font-size: 25px;
     color: rgb(0, 0, 0);
@@ -149,7 +155,7 @@ footer {
 }
 
 .lk {
-  padding-top: 10px;
+  margin-top: 10px;
 }
 
 /* Incio mediaqueries */

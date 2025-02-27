@@ -8,7 +8,6 @@
 /* TODO RESPECTO AL HEADER */
 .barraNavegacion {
   background-color: rgb(247, 208, 211);
-  border-bottom: #000000 solid;
 } /*cambio de bg-color header */
 .pages {
   margin: 1px;
@@ -49,13 +48,15 @@ body {
 }
 
 /* TODO RESPECTO main */
-main {
-  background-image: linear-gradient(rgb(247, 208, 211), rgba(224, 224, 131, 0.5));
-}
 main h1 {
+  margin-top: 20px;
   color: rgb(8, 5, 1);
   display: flex;
   justify-content: center;
+}
+main .bannerC {
+  width: 80%;
+  justify-self: center;
 }
 
 .boxDeTodosLosProductos {
@@ -86,7 +87,7 @@ main h1 {
 }
 .cajaPublicacion .imgProductos {
   width: 190px;
-  padding-top: 10px;
+  margin-top: 10px;
 }
 .cajaPublicacion .precio {
   border: 1px solid black;
@@ -124,8 +125,7 @@ main h1 {
 
 /* TODO RESPECTO AL FOOTER */
 footer {
-  border-top: #000000 solid;
-  background-image: linear-gradient(rgba(224, 224, 131, 0.5), rgb(247, 208, 211));
+  background-color: rgb(247, 208, 211);
 }
 footer .logoFooter {
   font-size: 25px;
@@ -146,7 +146,7 @@ footer .logoFooter {
 }
 
 .lk {
-  padding-top: 10px;
+  margin-top: 10px;
 }
 
 /* Incio mediaqueries */
