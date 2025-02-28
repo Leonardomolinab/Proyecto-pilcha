@@ -9,10 +9,10 @@ $rosaGeneral: rgb(247, 208, 211);
 $rosaSecundario: rgba(247, 208, 211, 0.572);
 
 /* TODO RESPECTO AL HEADER */
+/*cambio de bg-color header */
 .barraNavegacion {
   background-color: $rosaGeneral;
-  // border-bottom: #000000 solid;
-} /*cambio de bg-color header */
+}
 
 .pages {
   margin: 1px;
@@ -98,7 +98,8 @@ main {
   .contenedorImgProducto {
     width: 180px;
     height: 215px;
-    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 10px;
     margin-bottom: 10px;
     .imgProductos {

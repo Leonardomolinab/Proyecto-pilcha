@@ -6,9 +6,11 @@
 }
 
 /* TODO RESPECTO AL HEADER */
+/*cambio de bg-color header */
 .barraNavegacion {
   background-color: rgb(247, 208, 211);
-} /*cambio de bg-color header */
+}
+
 .pages {
   margin: 1px;
   font-size: 15px;
@@ -91,7 +93,8 @@ main .bannerC .indicador {
 .cajaPublicacion .contenedorImgProducto {
   width: 180px;
   height: 215px;
-  justify-self: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 10px;
   margin-bottom: 10px;
 }
