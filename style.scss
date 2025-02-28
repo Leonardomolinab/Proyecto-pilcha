@@ -6,6 +6,7 @@
     sans-serif;
 }
 $rosaGeneral: rgb(247, 208, 211);
+$rosaSecundario:rgba(247, 208, 211, 0.572);
 
 /* TODO RESPECTO AL HEADER */
 .barraNavegacion {
@@ -60,6 +61,9 @@ main {
     display: flex;
     justify-content: center;
   }
+  .indicador {
+    background-color: rgba(0, 0, 0, 0.352);
+  }
 }
 .boxDeTodosLosProductos {
   display: grid;
@@ -68,7 +72,7 @@ main {
 }
 
 .cajaPublicacion {
-  background-color: $rosaGeneral;
+  background-color: $rosaSecundario;
   width: 250px;
   border: solid 1px black;
   border-radius: 10px;
@@ -77,7 +81,7 @@ main {
   margin-bottom: 20px;
   transition: transform 1s ease 0.5s;
   &:hover {
-    transform: translateY(-3px);
+    transform: translateY(-20px);
   }
   button {
     transition: border 2s ease;
@@ -157,7 +161,7 @@ footer {
 
 /* Incio mediaqueries */
 @media only screen and (min-width: 721px) {
-  .bannerC{
+  .bannerC {
     width: 80%;
     justify-self: center;
   }
