@@ -91,8 +91,8 @@ main .bannerC .indicador {
   border: 2px ridge rgb(255, 255, 255);
 }
 .cajaPublicacion .contenedorImgProducto {
-  width: 180px;
-  height: 215px;
+  width: 200px;
+  height: 200px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
