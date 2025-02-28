@@ -54,7 +54,11 @@ main h1 {
   display: flex;
   justify-content: center;
 }
-main .indicador {
+main .bannerC {
+  display: flex;
+  justify-content: center;
+}
+main .bannerC .indicador {
   background-color: rgba(0, 0, 0, 0.352);
 }
 
@@ -82,11 +86,20 @@ main .indicador {
 }
 .cajaPublicacion button:hover {
   background-color: rgb(247, 208, 211);
-  border: 3px ridge rgb(255, 255, 255);
+  border: 2px ridge rgb(255, 255, 255);
 }
-.cajaPublicacion .imgProductos {
-  width: 190px;
+.cajaPublicacion .contenedorImgProducto {
+  width: 180px;
+  height: 215px;
+  justify-self: center;
   margin-top: 10px;
+  margin-bottom: 10px;
+}
+.cajaPublicacion .contenedorImgProducto .imgProductos {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .cajaPublicacion .precio {
   border: 1px solid black;
@@ -102,11 +115,13 @@ main .indicador {
   font-size: medium;
 }
 
-.mapas {
+.contenedorMapa {
+  display: flex;
+  justify-content: center;
+}
+.contenedorMapa .mapas {
   width: 60%;
   height: 300px;
-  display: flex;
-  justify-self: center;
 }
 
 .pago {
