@@ -1,0 +1,3 @@
+Agregue palabras clave a cada pagina de contenido.
+Agregue titulo a cada pagina de contenido.
+Agregue descripción a cada pagina de contenido.
